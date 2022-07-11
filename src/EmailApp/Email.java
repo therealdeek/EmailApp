@@ -40,8 +40,8 @@ public class Email
         int deptChoice = in.nextInt();
 
         if(deptChoice == 1) { return "Sales";}
-        else if(deptChoice == 2) { return "Development";}
-        else if(deptChoice == 3) { return "Human Resources";}
+        else if(deptChoice == 2) { return "Dev";}
+        else if(deptChoice == 3) { return "HR";}
         else { return "N/A";}
     }
 
@@ -72,9 +72,10 @@ public class Email
 
     // set alternate email
 
-    public void setAltEmail(String email)
+    public String setAltEmail(String email)
     {
         this.altEmail = altEmail;
+        return email;
     }
 
     // change the password
@@ -91,11 +92,13 @@ public class Email
     public String getAltEmail() {return altEmail;}
     public String getPassword() {return password;}
 
+
     public String showInfo()
     {
         return "\nDISPLAY NAME: "+fName + " " + lName +
                 "\nCOMPANY EMAIL: "+ email +
                 "\nMAILBOX CAPACITY: " + mailboxCap + " mb";
+
     }
 
 }

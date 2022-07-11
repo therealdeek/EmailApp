@@ -22,6 +22,11 @@ public class EmailApp
     {
         Email emp1= new Email("David", "Smith");
 
+        System.out.println(emp1.setAltEmail("Your alternate email is: "
+                + "ds909@yahoo.com"));
+
+        System.out.println(emp1.showInfo());
+
 
 
 
